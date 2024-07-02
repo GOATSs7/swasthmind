@@ -4,7 +4,8 @@
   "info": {
     "singularName": "team",
     "pluralName": "teams",
-    "displayName": "team"
+    "displayName": "team",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,23 +16,24 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "medialinks": {
       "type": "json"
     },
-    "description": {
-      "type": "text"
-    },
     "role": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -1058,6 +1058,7 @@ export interface ApiTeamTeam extends Schema.CollectionType {
     singularName: 'team';
     pluralName: 'teams';
     displayName: 'team';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1066,8 +1067,8 @@ export interface ApiTeamTeam extends Schema.CollectionType {
     name: Attribute.String;
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     medialinks: Attribute.JSON;
-    description: Attribute.Text;
     role: Attribute.String;
+    description: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
